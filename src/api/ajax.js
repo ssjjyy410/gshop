@@ -3,7 +3,7 @@ ajax请求函数模块
 返回值：promise对象(异步返回的数据是response.data)
 */
 import axios from 'axios'
-export default function (url,data={},type) {
+export default function (url,data={},type='GET') {
   return new Promise((resolve, reject) =>{
     //执行异步ajax请求
     let promise
